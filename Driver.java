@@ -1,7 +1,7 @@
 public class Driver {
     static int batchSize = 128;
     static double learningRate = .001;
-    static double decayRate = 0.995; // This shrinks the learning rate by 15% each epoch
+    static double decayRate = 0.995;
     static int epochs = 50;
     static int timeToDisplay = 1;
     static int imageCount = 50;
