@@ -1,0 +1,3 @@
+[submodule "src/JavaML-Core"]
+	path = src/JavaML-Core
+	url = git@github.com:jdvallad/JavaML-Core.git
