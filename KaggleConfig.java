@@ -7,7 +7,7 @@ public class KaggleConfig extends CoreConfig {
         // Defaults are set above
         // Hyperparameters
         this.batchSize = 128;
-        this.learningRate = 0.001;
+        this.learningRate = 0.00075;
         this.decayRate = 0.99;
         this.epochs = 30;
 
@@ -23,7 +23,7 @@ public class KaggleConfig extends CoreConfig {
         this.trainPath = "./csv/train_split.csv";
         this.validationPath = "./csv/validate_split.csv";
         this.testPath = "./csv/test_split.csv";
-        this.loadModelPath = "./models/newBestHopefully.ser";
+        this.loadModelPath = "./models/1195.ser";
         this.saveModelPath = "./models/newBestv2.ser";
         this.nodes = new int[] { 0, 512, 128, 1 }; // input layer will be updated after hot-encoding
         this.activations = new String[] { "leakyRelu", "leakyRelu", "identity" };
