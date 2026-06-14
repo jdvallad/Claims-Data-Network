@@ -22,7 +22,8 @@ public class Driver {
         config.nodes[0] = parser.totalInputFeatures;
         // 2. Inject the parser into the file streaming engines
         StreamingIterator[] iterators = loadData(config, parser);
-        NeuralNetwork model = createModel(config);
+        // NeuralNetwork model = createModel(config);
+        NeuralNetwork model = loadModel(config);
         // 3. Execute the pipeline
         trainModel(model, iterators[0], iterators[1], config);
         evaluatePredictions(model, iterators[2], config);

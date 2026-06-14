@@ -8,8 +8,8 @@ public class KaggleConfig extends CoreConfig {
         // Hyperparameters
         this.batchSize = 128;
         this.learningRate = 0.001;
-        this.decayRate = 0.995;
-        this.epochs = 20;
+        this.decayRate = 0.99;
+        this.epochs = 30;
 
         // --- SPLIT SETTINGS ---
         this.randomSeed = 42L; // The Answer to the Ultimate Question (ensures reproducibility)
@@ -23,8 +23,8 @@ public class KaggleConfig extends CoreConfig {
         this.trainPath = "./csv/train_split.csv";
         this.validationPath = "./csv/validate_split.csv";
         this.testPath = "./csv/test_split.csv";
-        this.loadModelPath = "./models/v3.ser";
-        this.saveModelPath = "./models/newBestHopefully.ser";
+        this.loadModelPath = "./models/newBestHopefully.ser";
+        this.saveModelPath = "./models/newBestv2.ser";
         this.nodes = new int[] { 0, 512, 128, 1 }; // input layer will be updated after hot-encoding
         this.activations = new String[] { "leakyRelu", "leakyRelu", "identity" };
         this.costFunction = "meanSquaredError";
