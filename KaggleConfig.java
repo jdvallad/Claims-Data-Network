@@ -9,7 +9,7 @@ public class KaggleConfig extends CoreConfig {
         this.batchSize = 128;
         this.learningRate = 0.00075;
         this.decayRate = 0.99;
-        this.epochs = 30;
+        this.epochs = 20;
 
         // --- SPLIT SETTINGS ---
         this.randomSeed = 42L; // The Answer to the Ultimate Question (ensures reproducibility)
